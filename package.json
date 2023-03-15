@@ -1,8 +1,8 @@
 {
-  "name": "ihaveideas",
+  "name": "ihaveidea",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nikhilprevankar.github.io/ihaveideas",
+  "homepage": "https://nikhilprevankar.github.io/ihaveidea",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
