@@ -78,8 +78,8 @@ function Test() {
               <Form.Group className="mb-3">
                 <Form.Label>key</Form.Label>
                 <Form.Control
-                  type="string"
-                  placeholder="Enter email"
+                  type="password"
+                  placeholder="Enter"
                   value={_key}
                   onChange={(e) => setKey("" + e.target.value)}
                 />
