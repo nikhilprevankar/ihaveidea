@@ -6,11 +6,22 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { allValuesEmail2, allValuesExport1 } from "../../constants/Constants";
+import { useIdleTimer } from "react-idle-timer";
 
 function Test() {
   const [valueEmail, setValueEmail] = useState("abc@gmail.com,");
   const [valueKey, setValueKey] = useState("xyz@gmail.com,");
   const [_key, setKey] = useState("");
+
+  const handleOnIdle = () => {
+    clearAll();
+  };
+
+  const idle = useIdleTimer({
+    timeout: 1000 * 60 * 10,
+    onIdle: handleOnIdle,
+    debounce: 1000,
+  });
 
   const encryptAES = (text) => {
     const key = CryptoJS.enc.Utf8.parse(_key);
@@ -69,6 +80,14 @@ function Test() {
     return elementValue;
   };
 
+  const clearAll = () => {
+    setValueEmail("abc@gmail.com,");
+    setValueKey("xyz@gmail.com,");
+    setDisplayValueEmail_1("");
+    setDisplayValueEmail_2("");
+    setKey("");
+  };
+
   return (
     <>
       <Container>
@@ -101,17 +120,7 @@ function Test() {
             </Form>
           </Col>
           <Row>
-            <Button
-              variant="primary"
-              type="button"
-              onClick={() => {
-                setValueEmail("abc@gmail.com,");
-                setValueKey("xyz@gmail.com,");
-                setDisplayValueEmail_1("");
-                setDisplayValueEmail_2("");
-                setKey("");
-              }}
-            >
+            <Button variant="primary" type="button" onClick={() => clearAll()}>
               Clear
             </Button>
           </Row>
