@@ -9,8 +9,8 @@ import { allValuesEmail2, allValuesExport1 } from "../../constants/Constants";
 import { useIdleTimer } from "react-idle-timer";
 
 function Test() {
-  const [valueEmail, setValueEmail] = useState("abc@gmail.com,");
-  const [valueKey, setValueKey] = useState("xyz@gmail.com,");
+  const [valueEmail, setValueEmail] = useState("abc,");
+  const [valueKey, setValueKey] = useState("xyz,");
   const [_key, setKey] = useState("");
 
   const handleOnIdle = () => {
