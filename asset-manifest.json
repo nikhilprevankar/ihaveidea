@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ihaveidea/static/css/main.345ec4e7.css",
-    "main.js": "/ihaveidea/static/js/main.250c3405.js",
-    "static/js/504.28c77ca9.chunk.js": "/ihaveidea/static/js/504.28c77ca9.chunk.js",
+    "main.js": "/ihaveidea/static/js/main.0cace86c.js",
+    "static/js/504.03895f7e.chunk.js": "/ihaveidea/static/js/504.03895f7e.chunk.js",
     "static/js/763.920cbf56.chunk.js": "/ihaveidea/static/js/763.920cbf56.chunk.js",
     "index.html": "/ihaveidea/index.html",
     "main.345ec4e7.css.map": "/ihaveidea/static/css/main.345ec4e7.css.map",
-    "main.250c3405.js.map": "/ihaveidea/static/js/main.250c3405.js.map",
-    "504.28c77ca9.chunk.js.map": "/ihaveidea/static/js/504.28c77ca9.chunk.js.map",
+    "main.0cace86c.js.map": "/ihaveidea/static/js/main.0cace86c.js.map",
+    "504.03895f7e.chunk.js.map": "/ihaveidea/static/js/504.03895f7e.chunk.js.map",
     "763.920cbf56.chunk.js.map": "/ihaveidea/static/js/763.920cbf56.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.345ec4e7.css",
-    "static/js/main.250c3405.js"
+    "static/js/main.0cace86c.js"
   ]
 }
